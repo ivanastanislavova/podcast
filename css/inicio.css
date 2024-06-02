@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina los márgenes predeterminados */
+}
+
+
+
+.title {
+    text-align: center;
+    position: relative;
+    font-size: 2em;
+    z-index: 1;
+    color: #006751;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+    border-bottom: 40px solid #acd4a4; /* Aumenta el grosor de la línea */
+    z-index: -1;
+}
+
+p {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify; /* Justifica el texto */
+    text-align-last: center; /* Centra el último renglón */
+}
